@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Платформа Тендеров</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="img/IMG_9922-removebg-preview.png" alt="Логотип">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li class="link"><a href="#" class="buk">Главная</a></li>
+            <li class="link"><a href="#" class="buk">Тендеры</a></li>
+            <li class="link"><a href="#" class="buk">О нас</a></li>
+        </ul>
+        <button class="btn">Связаться с нами</button>
+    </nav>
+
+    <header class="container">
+        <div class="content">
+            <h4>Добро пожаловать на нашу платформу тендеров</h4>
+            <h1>Найдите и разместите <span>Тендеры</span></h1>
+            <p>Откройте для себя разнообразные тендеры и разместите свои проекты для торгов. Присоединяйтесь к нашей платформе, чтобы найти потенциальных клиентов и поставщиков услуг.</p>
+            <a href="#new-tender" class="btn">Начать</a>
+        </div>
+        <div class="imaig">
+            <img src="img/foto1.jpg" alt="Изображение">
+        </div>
+    </header>
+
+    <section class="container">
+        <h2 class="header">Доступные Тендеры</h2>
+        <ul id="tenders-list">
+            <!-- Тендеры будут добавляться здесь с помощью JavaScript -->
+        </ul>
+    </section>
+
+    <section class="container" id="new-tender">
+        <h2 class="header">Разместить Новый Тендер</h2>
+        <form id="tender-form">
+
+            <label for="quantity">Количество:</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <label for="product">Товар:</label>
+            <input type="text" id="product" name="product" required>
+
+            <label for="priceDuration">Цена:</label>
+            <input type="text" id="priceDuration" name="priceDuration" required>
+
+            <label for="endDate">ДСрок:</label>
+            <input type="date" id="endDate" name="endDate" required>
+
+            <button type="submit" class="btn">Разместить тендер</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
